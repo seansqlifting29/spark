@@ -3,6 +3,8 @@ import './App.css';
 import CryptoSelector from './CryptoSelector';
 import ConnectButton from './ConnectButton';
 import Dashboard from './Dashboard';
+import VideoPlayer from './VideoPlayer'; // Adjust the import path as needed
+
 function App() {
   const [selectedCrypto, setSelectedCrypto] = useState(null);
   const [walletConnected, setWalletConnected] = useState(false);
@@ -21,11 +23,16 @@ function App() {
 
   return (
     <div className="App">
+      {/* Video Banner */}
+      <div className="video-banner">
+        <VideoPlayer />
+      </div>
+  
       <header className="App-header">
         <h1>Crypto Wallet</h1>
         <p>Select a cryptocurrency:</p>
         <CryptoSelector onSelect={handleCryptoSelect} selectedCrypto={selectedCrypto} />
-
+  
         {/* Add the Connect to Wallet button */}
         {!walletConnected ? (
           <ConnectButton onClick={handleConnectWallet} />
@@ -37,6 +44,7 @@ function App() {
       </header>
     </div>
   );
+  
 }
 
 export default App;

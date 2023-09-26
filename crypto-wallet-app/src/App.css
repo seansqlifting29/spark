@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styles for the video banner */
+.video-banner {
+  height: 50px; /* Set the desired height */
+  background-color: #001f3f; /* Dark navy blue background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Styles for the header */
+.App-header {
+  background-color: #001f3f; /* Dark navy blue background color */
+  padding: 50px;
+  text-align: center;
+  color: white; /* Text color for the header */
+}
+
+/* Styles for the main content */
+main {
+  padding: 10px;
+}
+
+/* Add this CSS rule to hide horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Add this CSS rule to hide horizontal scrolling */
+body {
+  overflow-y: hidden;
+}
